@@ -39,10 +39,7 @@ configurations.all {
 
 dependencies {
     implementation 'net.neoforged:neoforge:21.1.233'
-
-    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly files('libs/create-1.21.1-6.0.10.jar')
-    runtimeOnly files('libs/create-1.21.1-6.0.10.jar')
+    implementation files('libs/create-1.21.1-6.0.10.jar')
 }
 
 tasks.withType(JavaCompile).configureEach {
